@@ -23,9 +23,10 @@ if (input) {
     sessionStorage.setItem("hasSpoken", "true");
   }
 
-      setTimeout(() => {
-        audio.play();
-      }, 5000);
+    audio.play();
+      // setTimeout(() => {
+      //   audio.play();
+      // }, 5000);
   });
 }
 
@@ -44,6 +45,7 @@ function checkPassword() {
       if (userInput === code) {
           audio.pause();
           localStorage.removeItem("hasSpoken");
+          window.location.href="YORO/index.html"
 
         // audio.currentTime = 0;
       }

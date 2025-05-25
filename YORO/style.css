@@ -1,0 +1,399 @@
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
+  color: rgb(228, 228, 228);
+}
+body{
+  /* background-image: url(https://images.pexels.com/photos/18875847/pexels-photo-18875847/free-photo-of-white-parabolic-dish-antennae-in-a-green-field-in-germany.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(0, 0, 0); */
+    background: linear-gradient(to right,  #5b8381, rgb(0, 0, 0) 250%);
+  width: 100vw;
+  overflow-x: hidden;
+  /* height: 100vh; */
+}
+.hr,.hr2,.hr3{
+  /* border: none; */
+  background-color: rgb(0, 136, 255);
+  /* border: rgb(0, 136, 255) solid 3px; */
+  background: linear-gradient(to right , rgb(0, 136, 255) , rgba(0, 136, 255, 0));
+  width: 100px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.hr2{
+  position: absolute;
+  animation: hrk 5s infinite linear;
+}
+@keyframes hrk {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.hr3{
+  position: absolute;
+  animation: hrk2 15s infinite linear;
+}
+@keyframes hrk2 {
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+.hr3 h2{
+  background-color: aliceblue;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+.hr{
+  background-color: rgba(240, 248, 255, 0);
+  border: none;
+  border: #a9a9a9 double 5px;
+  background: linear-gradient(to right , rgba(0, 136, 255, 0) , rgba(0, 136, 255, 0));
+  position: fixed;
+  top: 20vh;
+  left: 0vw;
+  border-radius: 0px 100px 0px 100px;
+  animation: sd 20s infinite linear;
+}
+@keyframes sd {
+  0%{
+    transform: translateX(0px);
+  }
+  49%{
+      border-radius: 0px 100px 0px 100px;
+  }
+  50%{
+    transform: translateX(300px);
+      border-radius: 100px 0px 100px 0px;
+  }
+  99%{
+      border-radius: 100px 0px 100px 0px;
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+.hr2{
+    background: linear-gradient(to right , #097a80d3 , rgba(255, 255, 255, 0.5));
+}
+.hr3{
+    background: linear-gradient(to right , #09787ed3 , rgba(255, 0, 0, 0.729));
+}
+.vid{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.vid video{
+  /* width: 100%; */
+  height: 111.5%;
+}
+.vid-cover{
+    position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000080;
+  display: none;
+}
+header{
+  /* background-color: #890d0d; */
+  width: 100vw;
+  height: 70px;
+  padding: 0px 1vw 0px 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  z-index: 9;
+}
+.h2{
+    font-family: "Playwrite IN", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  /* font-size: 30px; */
+  /* position: absolute;
+  top: 35px;
+  left: 35px; */
+}
+.aa{
+  border: rgba(0, 136, 255, 0) solid 3.5px;
+  border-bottom: #00bbaf solid 3.5px;
+  border-radius: 100px;
+  color: #00d2c4;
+}
+.gr-div{
+    position: fixed;
+  top: 100px;
+  left: 60px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  display: none;
+}
+.gr{
+  /* position: fixed;
+  top: 100px;
+  left: 120px; */
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: #0080774f 20px 20px 10px 10px; */
+  border: rgba(255, 0, 0, 0) solid 5px;
+  border-bottom: rgba(0, 134, 151, 0.758) solid 5px;
+  overflow: hidden;
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+  /* display: none; */
+}
+.gr img{
+  width: 100%;
+  /* border-radius: 100px; */
+}
+.welcome{
+  width: 100vw;
+  overflow-x: hidden;
+  height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.549); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: none; */
+}
+.skewed {
+  width: 30%;
+  height: 100%;
+  /* background-color: #3498db; */
+  clip-path: polygon(0 0, 100% 0, 80% 110%, 0% 100%);
+  /* display: none; */
+}
+
+.fill {
+  width: 70%;
+  min-width: 600px;
+  height: 100%;
+  /* border: #00433e solid 100px; */
+  /* border-top: #00433e solid 100px; */
+  /* background-color: #0080777b; */
+  background: linear-gradient(to right , #003e3a , #00807700 150%);
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+    display: flex;
+  align-items: start;
+  justify-content: right;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* gap: 20px; */
+  padding: 30vh 100px 100px 100px;
+}
+.center-info{
+  width: 400px;
+  height: 200px;
+  padding-top: 20px;
+  text-align: center;
+}
+.apps{
+  /* background-color: #00000067; */
+  width: 550px;
+  min-width: 400px;
+  height: 400px;
+  /* border-radius: 30px; */
+  /* border: #00d0ff double 10px; */
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow: hidden;
+}
+.apps .title{
+  width: 90%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: #ffffff00 solid 5px;
+  border-bottom: #ffffff67 solid 5px;
+  /* border-radius: 100px; */
+}
+.apps .title hr{
+  border: none;
+  background-color: #ffffff67;
+  width: 80px;
+  height: 7px;
+  border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.app{
+  width: 80px;
+  height: 90px;
+  background: linear-gradient(to top , rgba(255, 50, 50, 0.723) , rgba(255, 0, 0, 0) 70%);
+  border: #ffffff00 solid 0px;
+  border-bottom: #ffffff solid 3px;
+  border-top: #000000 solid 3px;
+  border-radius: 10px 10px 8px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+}
+.app-back{
+  width: 100%;
+  height: 75%;
+  background-image: url(https://cdn-icons-png.flaticon.com/128/9555/9555155.png);
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_gSLb085-DhBE1M0h7IGCdQ89vbFJ1uGuFQ&s); */
+  background-position: center;
+  background-size: 60%;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.app-text{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  /* padding-top: 4px; */
+}
+.apps-div{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  gap: 5px;
+  background-color: #00000067;
+  width: 100%;
+  height: 85%;
+  padding: 20px;
+    border: #00d0ff solid 4px;
+    border-radius: 20px;
+}
+@media (max-width:1100px) {
+  .fill{
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+      background: linear-gradient(330deg , #ff00005a , #00807769);
+  }
+  .apps-div{
+    padding: 10px;
+  }
+  .hr{
+    display: flex;
+  }
+}
+
+#ab-1{
+  background-image: url(https://cdn-icons-png.flaticon.com/128/15916/15916610.png);
+}
+#ab-2{
+  /* background-image: url(https://static1.xdaimages.com/wordpress/wp-content/uploads/2020/01/play-store-updates.jpg); */
+  /* background-size: 140%; */
+  background-image: url(https://cdn-icons-png.flaticon.com/128/5996/5996260.png);
+}
+
+#ab-3{
+  background-image: url(https://cdn-icons-png.flaticon.com/128/726/726623.png);
+  /* background-image: url(https://img.freepik.com/free-psd/phone-icon-design_23-2151311652.jpg?semt=ais_hybrid&w=740); */
+  background-size: 50%;
+}
+
+#ab-4{
+  background-image: url(https://cdn-icons-png.flaticon.com/128/10238/10238788.png);
+  /* background-image: url(https://img.freepik.com/free-psd/phone-icon-design_23-2151311652.jpg?semt=ais_hybrid&w=740); */
+  background-size: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ad{
+  background-color: #00000067;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-radius: 15px;
+  padding: 10px 0px 10px 0px;
+}
+.info-card-line{
+  /* background-color: #ff000067; */
+  width: 50px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.info-card-line hr{
+  width: 10px;
+  height: 30px;
+  background-color: #00bbaf;
+  border: none;
+}
+.icl{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* background-color: #00bbaf; */
+  /* width: 100%; */
+}

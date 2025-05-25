@@ -56,7 +56,7 @@ body{
 }
 .center-info{
   max-width: 550px;
-  text-align: center;
+  text-align:center;
   text-shadow: #000000 0px 0px 20px;
   line-height: 30px;
 }
@@ -80,6 +80,12 @@ header{
   /* position: absolute;
   top: 35px;
   left: 35px; */
+}
+.aa{
+  border: rgba(0, 136, 255, 0) solid 3.5px;
+  border-bottom: rgb(255, 0, 0) solid 3.5px;
+  border-radius: 100px;
+  color: red;
 }
 .main h1{
   display: flex;
@@ -142,12 +148,6 @@ header{
 .hr3{
     background: linear-gradient(to right , #09787ed3 , rgba(255, 0, 0, 0.729));
 }
-.aa{
-  border: rgba(0, 136, 255, 0) solid 3.5px;
-  border-bottom: rgb(255, 0, 0) solid 3.5px;
-  border-radius: 100px;
-  color: red;
-}
 .v-form{
   width: 390px;
   display: flex;
@@ -186,4 +186,10 @@ header{
   width: 30px;
   border-radius: 7px;
   display: none;
+}
+@media (max-width:700px) {
+  .wer{
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
