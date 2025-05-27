@@ -167,8 +167,30 @@ header{
 .v-form{
   width: 390px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+}
+.rap{
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 10px;
+  width: 100%;
+  height: 45px;
+  border: rgb(182, 182, 182) solid 2.8px;
+  border-radius: 12px;
+  /* background: linear-gradient(to top,  #03751c99 , rgba(255, 0, 0, 0) 70%); */
+  background-color: #00565eb0;
+  outline: none;
+  text-align: center;
+  padding-left: 30px;
+}
+#msg-div{
+  width: 300px;
+    border: rgba(182, 182, 182, 0) solid 2.8px;
+      border-left: rgb(182, 182, 182) solid 2.8px;
 }
 .pass-div{
   width: 190px;
@@ -208,8 +230,19 @@ header{
 .btn img{
   width: 30px;
   border-radius: 7px;
-  display: none;
+  /* display: none; */
 }
+/* .btn i{
+  animation: wert 15s infinite linear;
+}
+@keyframes wert {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+} */
 @media (max-width:700px) {
   .wer{
     width: 100%;
@@ -262,7 +295,7 @@ footer{
   top: 65vh;
   opacity: 10%;
   /* box-shadow: #ffffff 0px 0px 20px 20px; */
-  display: none;
+  /* display: none; */
 }
 @media (max-width:500px) {
   .cloud{
@@ -275,5 +308,6 @@ footer{
     width: 95vw;
     height: 92vh;
     border-radius: 70px;
+    background-size: 90%;
   }
 }
