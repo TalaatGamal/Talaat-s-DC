@@ -34,7 +34,9 @@ if (input) {
 
 
 function checkPassword() {
+      const coda = "Talaat";
       const code = "2486";
+      const userVa = document.getElementById("user-div").value;
       const userInput = document.getElementById("pass-div").value;
 
       // const message = "Hello Sir !! Welcome to This App";
@@ -42,11 +44,19 @@ function checkPassword() {
       // utterance.lang = "en-US";
       // window.speechSynthesis.speak(utterance);
 
-      if (userInput === code) {
-          audio.pause();
+      if (userInput === code && userVa === coda) {
+          // document.getElementById("out").style.height="100vh"
+          document.getElementById("out").style.opacity="1"
+          document.getElementById("out").style.width="100vw"
+          setTimeout(() => {
+            document.getElementById("out").style.borderRadius="0px"
+          }, 800);
+          setTimeout(() => {
+              audio.pause();
           localStorage.removeItem("hasSpoken");
           window.location.href="YORO/index.html"
-
+          }, 900);
         // audio.currentTime = 0;
       }
+
     }

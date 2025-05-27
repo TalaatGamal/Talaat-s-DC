@@ -16,7 +16,7 @@
 </head>
 <body>
   <audio id="my-audio" src="audio/nmk.mp3" style="position: absolute; opacity: 0%;"></audio>
-  <div class="vid" >
+  <div class="vid">
     <video src="https://videos.pexels.com/video-files/31206652/13329392_2560_1440_24fps.mp4" autoplay muted loop></video>
   </div>
   <section class="main">
@@ -40,12 +40,16 @@
       <span style="color: rgb(0, 183, 255); font-weight: 600;">Serious warning !! </span>  This place contains sensitive information, please make sure you have sufficient authorization to avoid being tracked.
       </h2>
       <div class="v-form">
-              <input type="password" class="pass-div" id="pass-div" required placeholder="Your Password">
+              <input type="text" class="pass-div" id="user-div" required placeholder="Exeta">
+              <input type="password" class="pass-div" id="pass-div" required placeholder="Exeva">
               <div class="btn" id="btn" onclick="checkPassword()">
                 <h3><i class="fa-solid fa-bolt"></i> Check</h3>
               </div>
       </div>
   </section>
+  <div class="out" id="out">
+    
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
