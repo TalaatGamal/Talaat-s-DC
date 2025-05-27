@@ -109,6 +109,7 @@ header{
   gap: 10px;
   text-shadow: #ffffffba 0px 0px 10px;
   line-height: 30px;
+  font-size: 32px;
 }
 .hr,.hr2,.hr3{
   /* border: none; */
@@ -198,7 +199,7 @@ header{
   gap: 5px;
   cursor: pointer;
   /* background-color: #04353800; */
-    background: linear-gradient(to top,  #1f9d903f , rgba(255, 0, 0, 0) 70%);
+    background: linear-gradient(to top,  #1f9d9080 , rgba(255, 0, 0, 0) 70%);
 
   margin-top: 10px;
     /* background: linear-gradient(to right,  #ffffff38 , rgba(255, 0, 0, 0) 70%); */
@@ -213,5 +214,58 @@ header{
   .wer{
     width: 100%;
     margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+footer{
+  position: fixed;
+  top: 94vh;
+  left: 0vw;
+  height: 6vh;
+  width: 100vw;
+  /* background-color: #00292e; */
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.contact{
+  background-color: #005955;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+  position: fixed;
+  top: 20vh;
+  right: -60px;
+  z-index: 2;
+  border-radius: 0px 0px 10px 10px;
+  cursor: pointer;
+}
+.cloud{
+  background-image: url(https://cdn-icons-gif.flaticon.com/19004/19004064.gif);
+  background-position: center;
+  background-size: cover;
+  width: 390px;
+  height: 390px;
+  border-radius: 30px;
+  position: fixed;
+  top: 65vh;
+  opacity: 10%;
+  /* box-shadow: #ffffff 0px 0px 20px 20px; */
+  display: none;
+}
+@media (max-width:800px) {
+  .cloud{
+    display: block;
   }
 }
