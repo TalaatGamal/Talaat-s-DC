@@ -60,3 +60,58 @@ function checkPassword() {
       }
 
     }
+
+
+
+
+
+
+
+
+
+
+
+// let contact_btn = document.getElementById("contact")
+// let air_contact = document.getElementById("air-contact")
+
+//     if (contact_btn) {
+//     contact_btn.addEventListener("click", function() {
+    
+//       air_contact.style.cssText=`
+//         width: 90vw;
+//           padding: 20px;
+//             opacity: 1;
+//       `
+    
+//   });
+// }
+
+
+
+
+
+
+
+
+let contact_btn = document.getElementById("contact");
+let air_contact = document.getElementById("air-contact");
+
+if (contact_btn) {
+  contact_btn.addEventListener("click", function () {
+    // لو العنصر ظاهر
+    if (air_contact.style.opacity === "1") {
+      air_contact.style.cssText = `
+        width: 0;
+        padding: 0;
+        opacity: 0;
+      `;
+    } 
+    else {
+      air_contact.style.cssText = `
+        width: 95vw;
+        padding: 20px;
+        opacity: 1;
+      `;
+    }
+  });
+}
