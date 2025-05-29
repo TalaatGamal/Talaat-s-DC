@@ -21,9 +21,11 @@
   </div> -->
   <div class="vid-cover"></div>
     <header>
-        <h2 class="h2">
-        Tal<span class="aa">aa</span>t Gamal <span>'s Data Cloud</span>
-      </h2>
+        <a href="index.html" style="text-decoration: none;">
+          <h2 class="h2">
+            Tal<span class="aa">aa</span>t Gamal <span>'s Data Cloud</span>
+          </h2>
+        </a>
     </header>
   <section class="welcome" id="welcome">
             <div class="apps">
@@ -40,19 +42,19 @@
             <hr style="background-color: #bb0000;">
           </div>
           <div class="icl">
-                <div class="app">
+                <div class="app" aria-details="Finance">
           <div class="app-back" id="ab-1"></div>
           <div class="app-text">
             <h4>Finance</h4>
           </div>
               </div>
-            <div class="app">
+            <div class="app" aria-details="Media">
           <div class="app-back" id="ab-2"></div>
           <div class="app-text">
             <h4>Media</h4>
           </div>
             </div>
-          <div class="app">
+          <div class="app" aria-details="Emails">
           <div class="app-back" id="ab-3"></div>
           <div class="app-text">
             <h4>Emails</h4>
@@ -79,6 +81,15 @@
         </div>
     </div>
   </section>
+  <section class="in-app" id="in-app">
+    <div class="title">
+      <h2>Details in <span id="app_name">anonyms !!</span> App</h2>
+      <div class="exit-window" id="exit-window">
+        <h2>Exit</h2>
+      </div>
+    </div>
+  </section>
   <script src="sub.js"></script>
+  <script src="in_app/in_app.js"></script>
 </body>
 </html>

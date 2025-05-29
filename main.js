@@ -14,16 +14,17 @@ if (input) {
 
       const hasSpoken = sessionStorage.getItem("hasSpoken");
 
-  if (!hasSpoken) {
-    const message = "Hello Sir !! Welcome to The Data Center App";
-    const utterance = new SpeechSynthesisUtterance(message);
-    utterance.lang = "en-US";
-    window.speechSynthesis.speak(utterance);
+  // if (!hasSpoken) {
+  //   const message = "Hello Sir !! Welcome to The Data Center App";
+  //   const utterance = new SpeechSynthesisUtterance(message);
+  //   utterance.lang = "en-US";
+  //   window.speechSynthesis.speak(utterance);
 
-    sessionStorage.setItem("hasSpoken", "true");
-  }
+  //   sessionStorage.setItem("hasSpoken", "true");
+  // }
 
-    audio.play();
+  //   audio.play();
+  
       // setTimeout(() => {
       //   audio.play();
       // }, 5000);
