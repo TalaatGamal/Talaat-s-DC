@@ -90,6 +90,7 @@ header{
   /* display: none; */
   transition: 5s;
   opacity: 0;
+  scrollbar-width: none;
 }
 
 .apps{
@@ -205,7 +206,7 @@ header{
   justify-content: start;
   /* flex-wrap: wrap; */
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   /* background-color: #5a121267; */
   width: 49%;
   height: 100%;
@@ -217,6 +218,47 @@ header{
     overflow: hidden;
     padding: 10px;
     min-width: 400px;
+}
+#ad-title{
+  justify-content: center; 
+  padding: 10px; 
+  min-height: 30px; 
+  margin-bottom: 30px; 
+  background-color: #991a1a00;   
+  background: linear-gradient(to right , #043d4100 , #043d4100 110%);
+}
+.ad-advanced{
+  /* background-color: #0096a0; */
+  background: linear-gradient(to top ,  #0096a0 ,  #0095a000 70%);
+  width: 100%;
+  min-width: 380px;
+  min-height: 80px;
+  border-radius: 20px;
+
+    display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  cursor: pointer;
+  padding-left: 40px;
+}
+.ad-advanced h2{
+  font-family: "Playwrite IN", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+}
+.ad-img{
+  background-image: url(https://cdn-icons-png.flaticon.com/128/4488/4488426.png);
+  background-size: cover;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+#adi-2{
+  background-image: url(https://cdn-icons-png.flaticon.com/128/1576/1576463.png);
 }
 .ad-2{
   /* background-color: #0aa7aacc; */
@@ -360,50 +402,53 @@ background-image: url(https://mail.google.com/mail/u/0/?ui=2&ik=708afa47f2&attid
 
 
 
-
-
-.in-app{
-  backdrop-filter: blur(10px);
-  background-color: #000000b4;
-  border: #ffffff solid 5px;
-  width: 0vw;
-  height: 0vh;
-  position: fixed;
-  top: 9vh;
-  left: 2.5vw;
-  border-radius: 30px;
-  overflow: hidden;
-  display: none;
-  opacity: 0;
-  transition: 0.5s;
+@media (max-width:1200px) {
+  .apps{
+  width: 95vw;
+  height: 700px;margin-top: 10vh;
 }
-.in-app .title{
-  background: linear-gradient(to bottom , rgb(0, 171, 183) , rgba(255, 0, 0, 0));
-  width: 100%;
-  min-width: max-content;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 100px 10px 100px;
+.apps-div{
+  flex-wrap: wrap;
 }
-.exit-window{
-  width: 85px;
-  height: 45px;
-  background-color: #ba2222;
-  border: #ffffff solid 2px;
-  border-radius: 13px;
+#ad-title{
+  flex-wrap: wrap;
+  justify-content: left;
+  width: 400px;
+}
+#ad-title h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 17px;
-  cursor: pointer;
+  flex-wrap: wrap;
 }
-.exit-window h2{
-  color: #ffffff;
 }
-@media (max-width:800px) {
-  .in-app .title{
-    padding: 10px;
+@media (max-width:900px) {
+  .ad-advanced h2{
+    font-size: 25px;
+  }
+  .apps{
+  width: 95vw;
+  scrollbar-width: none;
+}
+.apps-div{
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.ad-1{
+    width: 90%;
+    min-height: 300px;
+    align-items: center;
+  }
+}
+@media (max-width:700px) {
+  .apps{
+    width: 100%;
+  }
+  .apps-div{
+    border: #00d0ff00 solid 4px;
+    border-top: #00d0ff solid 4px;
+    border-bottom: #00d0ff solid 4px;
   }
 }

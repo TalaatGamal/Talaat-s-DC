@@ -432,16 +432,17 @@ footer{
   background-size: cover;
   width: 390px;
   height: 390px;
-  border-radius: 30px;
+  border-radius: 40px;
   position: fixed;
   top: 65vh;
   opacity: 10%;
-  /* box-shadow: #ffffff 0px 0px 20px 20px; */
+  box-shadow: #000000 0px 0px 30px 30px inset;
   /* display: none; */
 }
 @media (max-width:500px) {
   .cloud{
     display: block;
+      box-shadow: #00000000 0px 0px 10px 10px inset;
   }
 }
 @media (min-width:500px) {
@@ -449,7 +450,7 @@ footer{
       display: block;
     width: 95vw;
     height: 92vh;
-    border-radius: 70px;
+    border-radius: 200px;
     background-size: 90%;
   }
 }

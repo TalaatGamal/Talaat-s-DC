@@ -58,7 +58,7 @@
 let in_app = document.getElementById("in-app");
 
 // كل العناصر اللي ليها كلاس app
-const elements = document.querySelectorAll('.app');
+const elements = document.querySelectorAll('.ad-advanced');
 
 elements.forEach(function(element) {
   element.addEventListener('click', function() {

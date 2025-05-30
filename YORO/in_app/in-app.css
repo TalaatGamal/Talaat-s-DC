@@ -1,0 +1,154 @@
+
+
+
+
+
+
+
+
+
+.in-app{
+  backdrop-filter: blur(10px);
+  background-color: #000000b4;
+  border: #ffffff solid 5px;
+  width: 0vw;
+  height: 0vh;
+  position: absolute;
+  top: 9vh;
+  left: 2.5vw;
+  border-radius: 30px;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+.in-app .title{
+  background: linear-gradient(to bottom , rgb(0, 171, 183) , rgba(255, 0, 0, 0));
+  width: 100%;
+  min-width: max-content;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px 10px 100px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.exit-window{
+  width: 85px;
+  height: 45px;
+  background-color: #ba2222;
+  border: #ffffff solid 2px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  cursor: pointer;
+}
+.exit-window h2{
+  color: #ffffff;
+}
+@media (max-width:800px) {
+  .in-app .title{
+    padding: 10px;
+  }
+}
+.document{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+    overflow-x: hidden;
+  overflow-y: auto;
+  padding-top: 10vh;
+}
+.fi-app{
+  width: 380px;
+  height: 350px;
+  /* background-color: aliceblue; */
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 5%; */
+}
+.fi-app-back{
+  width: 100%;
+  height: 75%;
+  background-image: url(https://images.seeklogo.com/logo-png/45/1/alex-bank-egypt-aren-logo-png_seeklogo-454802.png);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+#fi-app-back-2{
+  background-image: url(https://cdn.worldvectorlogo.com/logos/paypal-3.svg);
+}
+#fi-app-back-3{
+  background-image: url(https://seeklogo.com/images/U/upwork-logo-66B619A06A-seeklogo.com.png);
+}
+.fi-app-text{
+  width: 100%;
+  height: 25%;
+  /* background-color: rgba(28, 170, 90, 0.603); */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.fi-app-text input{
+  width: 70%;
+  height: 50px;
+  background-color: #00000000;
+  border: #ffffff solid 3px;
+  border-radius: 10px;
+  outline: none;
+}
+.fi-app-text input::placeholder{
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+}
+.fi-app-text div{
+  width: 30%;
+  height: 50px;
+  background-color: #01352c;
+  border: #ffffff00 solid 3px;
+  border-bottom: #ffffff solid 3px;
+  border-radius: 15px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+}
+.fi-app-text div i{
+  animation:  i-div 2s infinite linear;
+}
+@keyframes i-div {
+  0%{
+    transform: translateX(-5px);
+  }
+  50%{
+    transform: translateX(5px);
+  }
+  100%{
+    transform: translateX(-5px);
+  }
+}
