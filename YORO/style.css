@@ -242,12 +242,26 @@ header{
   cursor: pointer;
   padding-left: 40px;
 }
+.ad-advanced i{
+  position: relative;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: 20px;
+  color: #00717b;
+  border-left: #00b4c4 solid 8px;
+  border-right: #00b4c4 solid 8px;
+  background-color: #e4e4e4;
+  padding: 8px 5px 8px 5px;
+  border-radius: 5px;
+  box-shadow: #ffffff88 0px 0px 15px 5px;
+}
 .ad-advanced h2{
   font-family: "Playwrite IN", cursive;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 30px;
+    text-shadow: #ffffff88 0px 15px 15px;
 }
 .ad-img{
   background-image: url(https://cdn-icons-png.flaticon.com/128/4488/4488426.png);
@@ -423,6 +437,9 @@ background-image: url(https://mail.google.com/mail/u/0/?ui=2&ik=708afa47f2&attid
 }
 }
 @media (max-width:900px) {
+  .ad-advanced{
+    padding-left: 15px;
+  }
   .ad-advanced h2{
     font-size: 25px;
   }
@@ -450,5 +467,8 @@ background-image: url(https://mail.google.com/mail/u/0/?ui=2&ik=708afa47f2&attid
     border: #00d0ff00 solid 4px;
     border-top: #00d0ff solid 4px;
     border-bottom: #00d0ff solid 4px;
+  }
+  .my-photo{
+    border-radius: 100px;
   }
 }
