@@ -290,3 +290,18 @@
     opacity: 0;
   }
 }
+
+
+
+
+
+#fi-app-alex{
+  border: #00a05800 solid 20px;
+  border-left: #008a4c solid 15px;
+  border-right: #008a4c solid 15px; 
+  height: 300px;
+}
+.tera-page #option-alex h2{
+    /* background-color: #008a4c; */
+    background: linear-gradient(to right , #008a4c00 , #008a4c);
+}
