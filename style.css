@@ -200,12 +200,16 @@ header{
   background: linear-gradient(to top,  #64646474 , rgba(255, 0, 0, 0) 70%);
   outline: none;
   text-align: center;
+  transition: 0.5s;
 }
 .pass-div::placeholder{
   text-align: center;
   width: 100%;
   color: #ffffff;
   font-size: 18px;
+}
+.pass-div:hover{
+  background-color: #1f9d9080;
 }
 .btn{
   width: 100%;
@@ -225,7 +229,12 @@ header{
 
   margin-top: 10px;
     /* background: linear-gradient(to right,  #ffffff38 , rgba(255, 0, 0, 0) 70%); */
+    transition: 1s;
 
+}
+.btn:hover{
+    background: linear-gradient(to top,  #00ffe500 , rgba(255, 0, 0, 0) 70%);
+    background-color: #1f9d9080;
 }
 .btn img{
   width: 30px;
@@ -437,7 +446,7 @@ footer{
   top: 65vh;
   opacity: 10%;
   box-shadow: #000000 0px 0px 30px 30px inset;
-  /* display: none; */
+  display: none;
 }
 @media (max-width:500px) {
   .cloud{
@@ -447,7 +456,6 @@ footer{
 }
 @media (min-width:500px) {
   .cloud{
-      display: block;
     width: 95vw;
     height: 92vh;
     border-radius: 100px;

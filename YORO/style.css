@@ -88,7 +88,7 @@ header{
   align-items: center;
   justify-content: center;
   /* display: none; */
-  transition: 5s;
+  transition: 3s;
   opacity: 0;
   scrollbar-width: none;
 }
@@ -192,11 +192,11 @@ header{
   /* flex-wrap: wrap; */
   /* flex-direction: column; */
   gap: 10px;
-  background-color: #00000067;
+  /* background-color: #000000af; */
   width: 100%;
   height: 85%;
   padding: 20px;
-    border: #00d0ff solid 4px;
+    /* border: #00000055 solid 4px; */
     border-radius: 30px;
     position: relative;
 }
@@ -207,7 +207,10 @@ header{
   /* flex-wrap: wrap; */
   flex-direction: column;
   gap: 30px;
-  /* background-color: #5a121267; */
+  /* background-color: #ffffff1a; */
+  background: linear-gradient(to bottom , #ffffff1a , #ffffff00);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
   width: 49%;
   height: 100%;
   /* height: 85%;
@@ -217,7 +220,7 @@ header{
     position: relative; */
     overflow: hidden;
     padding: 10px;
-    min-width: 400px;
+    min-width: 500px;
 }
 #ad-title{
   justify-content: center; 
@@ -229,18 +232,72 @@ header{
 }
 .ad-advanced{
   /* background-color: #0096a0; */
-  background: linear-gradient(to top ,  #0096a0 ,  #0095a000 70%);
+  /* background: linear-gradient(to right ,  #0096a0 ,  #0095a000 100%); */
   width: 100%;
   min-width: 380px;
-  min-height: 80px;
-  border-radius: 20px;
-
+  min-height: 60px;
+  /* border-radius: 20px 20px 0px 20px; */
+  border-radius: 15px;
+  border: #ffffff solid 3px;
+  /* border-left: #ffffff solid 3px; */
+  /* padding: 5px; */
+  padding-right: 0px;
     display: flex;
   align-items: center;
-  justify-content: left;
-  gap: 10px;
+  justify-content: center;
+  /* gap: 15px; */
   cursor: pointer;
-  padding-left: 40px;
+  transition: 1s;
+}
+.ad-advanced:hover{
+  background-color: #ff000065;
+}
+#aa-2{
+  border: none; 
+
+  width: 100%;
+  min-width: 380px;
+  height: 0px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+#aa-2:hover{
+  background-color: #00000000;
+}
+#aa-2 input{
+  border: #ffffff00 solid 3px;
+  border-left:  #00bfff solid 3px;
+  border-right:  #00bfff solid 3px;
+  width: 100%;
+  min-width: 380px;
+  height: 50px;
+  /* height: 0px;
+  border: none; */
+  background-color: #00000081;
+  border-radius: 15px;
+  outline: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#aa-2 input::placeholder{
+  color: #00bfff;
+  font-weight: 600;
+  width: 100%;
+  /* text-align: center; */
+  padding-left: 15px;
+    transition: 0.5s;
+}
+#aa-2 input:hover::placeholder{
+  color: #ffffff;
+}
+#aa-2 input:hover{
+  background-color: #ff000065;
 }
 .ad-advanced i{
   position: relative;
@@ -256,19 +313,20 @@ header{
   box-shadow: #ffffff88 0px 0px 15px 5px;
 }
 .ad-advanced h2{
-  font-family: "Playwrite IN", cursive;
+  /* font-family: "Playwrite IN", cursive;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-style: normal;
-  font-size: 30px;
-    text-shadow: #ffffff88 0px 15px 15px;
+  font-style: normal; */
+  font-size: 25px;
 }
 .ad-img{
-  background-image: url(https://cdn-icons-png.flaticon.com/128/4488/4488426.png);
+  background-image: url(https://cdn-icons-gif.flaticon.com/6172/6172518.gif);
+  /* background-image: url(https://cdn-icons-gif.flaticon.com/14644/14644973.gif); */
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKHik3SuLImSyCh31X0-oLzgPr2E0lsXriIA&s); */
   background-size: cover;
   background-position: center;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
 }
 #adi-2{
@@ -279,7 +337,7 @@ header{
   width: 49%;
   height: 100%;
   border-radius: 20px;
-  min-width: 400px;
+  min-width: 500px;
     display: flex;
   align-items: center;
   justify-content: center;
@@ -292,6 +350,7 @@ header{
 /* background-image: url(https://mail.google.com/mail/u/0/?ui=2&ik=708afa47f2&attid=0.4&permmsgid=msg-a:r8482069493344679307&th=1971f151f1cf475b&view=fimg&realattid=1971f12ec4ed7b3c3bd4&disp=thd&attbid=ANGjdJ-lRVIHsDO-uFf5vqJ9747B8rHHYwtoUiDM5OsZ4wu-zBHw7uYfvdnJyHv8gHFdpvtWjW-zCkmI6IsmPQye4Xo0liTGw_NaunRKViDRYNn5MaBlFFa3ll0PIXQ&ats=2524608000000&sz=w1920-h970);
   background-position: center;
   background-size: cover; */
+  /* background-image: url(https://www.norc.org/content/dam/norc-org/images/projects/Russian-Public-Opinion-in-War-Time.jpg); */
 background-image: url(https://mail.google.com/mail/u/0/?ui=2&ik=708afa47f2&attid=0.2&permmsgid=msg-a:r8482069493344679307&th=1971f151f1cf475b&view=fimg&realattid=1971f12ec4ae802a8b11&disp=thd&attbid=ANGjdJ8AfiDjPgxPxSvN5KGrOpEzUtI0wey_ppqW_B7T3AjvstIyshf2WWGu9zLiHnRZ2NDBcxB0mZCYKsmE4zJbZh5dKH6c7ksNqJPyMZkdNUUUKOjb-Abhh379Obc&ats=2524608000000&sz=w1920-h970);
   background-position: 42%;
   background-size: 170%;
@@ -436,11 +495,19 @@ background-image: url(https://mail.google.com/mail/u/0/?ui=2&ik=708afa47f2&attid
   justify-content: center;
   flex-wrap: wrap;
 }
+.ad-1{
+      min-width: 400px;
+      height: 500px;
+}
+.ad-2{
+      min-width: 400px;
+      height: 500px;
+}
 }
 @media (max-width:900px) {
-  .ad-advanced{
+  /* .ad-advanced{
     padding-left: 15px;
-  }
+  } */
   .ad-advanced h2{
     font-size: 25px;
   }

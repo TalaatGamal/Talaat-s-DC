@@ -26,6 +26,13 @@
   justify-content: start;
   flex-direction: column;
 }
+@media (max-width:600px) {
+  .in-app{
+    border: #ffffff00 solid 5px;
+    border-top: #ffffff solid 5px;
+    border-bottom: #ffffff solid 5px;
+  }
+}
 .in-app .title{
   background: linear-gradient(to bottom , rgb(0, 171, 183) , rgba(255, 0, 0, 0));
   width: 100%;
@@ -64,13 +71,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 40px;
   width: 100%;
   height: 100%;
-    overflow-x: hidden;
+  overflow-x: hidden;
   overflow-y: auto;
   padding-top: 10vh;
+  transition: 1s;
+  scrollbar-width: none;
+}
+@media (max-width:1290px) {
+  .document{
+    gap: 20px;
+  }
+}
+@media (max-width:1250px) {
+  .document{
+    flex-wrap: wrap;
+  }
 }
 .fi-app{
   width: 380px;
@@ -83,6 +102,7 @@
   flex-direction: column;
   overflow: hidden;
   /* gap: 5%; */
+  transition: 1s;
 }
 .fi-app-back{
   width: 100%;
@@ -92,7 +112,7 @@
   background-size: 70%;
   background-repeat: no-repeat;
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 #fi-app-back-2{
   background-image: url(https://cdn.worldvectorlogo.com/logos/paypal-3.svg);
@@ -175,9 +195,7 @@
   left: 0vw;
   z-index: 2;
   border-radius: 30px;
-  overflow: hidden;
-  /* display: none;
-  opacity: 0; */
+  /* opacity: 0; */
   transition: 0.5s;
   display: flex;
   align-items: center;
@@ -187,6 +205,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 10vh;
+  display: none;
 }
 
 
@@ -215,16 +234,16 @@
   border-radius: 15px;
 }
 .tera-page .option h2 i{
-  color: #e4e4e4;
-  /* background-color: #c9c9c9; */
-  /* border-radius: 5px; */
+  color: #EA600E;
+  background-color: #ede8e8;
+  border-radius: 5px;
   height: 30px;
   width: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  border-left: #dedede solid 4px;
+  /* border-left: #dedede solid 4px; */
 }
 .tera-page .option h2 .texa{
   width: max-content;
