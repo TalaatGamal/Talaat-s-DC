@@ -359,6 +359,11 @@ background-image: url(https://mail.google.com/mail/u/0/?ui=2&ik=708afa47f2&attid
   border: #a7a7a7 solid 5px;
   /* border-bottom: #00b3ff solid 10px; */
   animation: img-x 8s infinite linear;
+  overflow: hidden;
+  padding: 10px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @keyframes img-x {
   0%{
